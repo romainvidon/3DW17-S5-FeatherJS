@@ -14,15 +14,21 @@ Getting up and running is as easy as 1, 2, 3.
 2. Install your dependencies
 
     ```
-    cd path/to/3-dw-17-s-5-feather-js
+    cd path/to/3dw17-s5-feather-js
     npm install
     ```
+3. Import database
+    ```
+    mongoimport --db exo-mediatheque --jsonArray db/ingredients.json
+    mongoimport --db exo-mediatheque --jsonArray db/recipes.json  
+    ```
 
-3. Start your app
+4. Start your app
 
     ```
     npm start
     ```
+
 
 ## Testing
 
