@@ -19,8 +19,8 @@ Getting up and running is as easy as 1, 2, 3.
     ```
 3. Import database
     ```
-    mongoimport --db exo-mediatheque --jsonArray db/ingredients.json
-    mongoimport --db exo-mediatheque --jsonArray db/recipes.json  
+    mongoimport --db mymenu --jsonArray db/ingredients.json
+    mongoimport --db mymenu --jsonArray db/recipes.json  
     ```
 
 4. Start your app
