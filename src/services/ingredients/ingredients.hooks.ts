@@ -1,4 +1,5 @@
 
+import softdelete from '../../hooks/softdelete';
 export default {
   before: {
     all: [],
@@ -12,8 +13,8 @@ export default {
 
   after: {
     all: [],
-    find: [],
-    get: [],
+    find: [softdelete()],
+    get: [softdelete()],
     create: [],
     update: [],
     patch: [],
