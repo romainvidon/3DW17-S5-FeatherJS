@@ -17,7 +17,6 @@ import services from './services';
 import appHooks from './app.hooks';
 import channels from './channels';
 import { HookContext as FeathersHookContext } from '@feathersjs/feathers';
-import mongodb from './mongodb';
 import mongoose from './mongoose';
 // Don't remove this comment. It's needed to format import lines nicely.
 
@@ -41,8 +40,6 @@ app.use('/', express.static(app.get('public')));
 // Set up Plugins and providers
 app.configure(express.rest());
 app.configure(socketio());
-
-app.configure(mongodb);
 
 app.configure(mongoose);
 
